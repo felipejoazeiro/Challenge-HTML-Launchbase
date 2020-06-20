@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+        {% block style %}
+            <title>Desafio 1</title>
+            <link rel="stylesheet" href="style.css">
+        {% endblock style %}
+    </head>
+    <body>
+        <header>
+            <div class="links">
+                <a href="/">Sobre</a>
+                <a href="https://discordapp.com/invite/gCRAFhc">Comunidade</a>
+                <a href="mailto:felipejoazeiro@gmail.com.br">E-mail</a>
+                <a href="tel:+5547992078767">Telefone</a>
+                <a href="/courses">Conteúdos</a>
+            </div>
+        </header>
+        {% block content %}
+        {% endblock content %}
+    </body>
+</html>

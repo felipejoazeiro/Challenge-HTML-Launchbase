@@ -1,0 +1,36 @@
+{% extends 'layout.njk' %}
+    {% block style %}
+        <title>Desafio 1 - Cursos</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="content.css">
+    {% endblock style %}
+    {% block content %}
+        <main>
+            <fieldset class="titulo-pagina">
+                <legend>Cursos Rocketseat</legend>
+            </fieldset>
+            <section class="cards">
+                {% for item in item %}
+                    <div id="{{item.id}}" class="card">
+                        <img src="{{item.img}}" alt="{{item.id}}-Logo">
+                        <p class="cursos">Cursos: {{item.cursos}}</p>
+                        <p class="custo">Custo: {{item.custo}}</p>
+                    </div>
+                {% endfor %}    
+            </section>
+            <div class="modal-overlay">
+                <div class="modal">
+                    <a class="close-modal">
+                        <i class="material-icons">close</i>
+                    </a>
+                    <div class="modal-content">
+                        <iframe src="" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="scripts.js"></script>
+    {% endblock content %}
+
+        

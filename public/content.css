@@ -1,0 +1,100 @@
+.titulo-pagina{
+    margin-top: 28px;
+}
+fieldset {
+    width: 80%;
+    margin: 0 auto;
+    border-top: 2px dashed #333;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    display: block;
+    text-align: center;
+}
+
+fieldset legend{
+    padding: 5px 10px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.cards{
+    display: grid;
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    padding-top: 5em;
+}
+.cards img{
+    margin-top: 20px;
+}
+
+.cards .card{
+    background-color: rgba(22, 30, 56, 0.795);
+    text-align: center;
+    padding: 25px;
+    height: 450px;
+    color: rgb(216, 238, 245);
+    border: solid 3px rgb(5, 6, 8);
+    border-radius: 15%;
+    cursor: pointer;
+}
+.card p{
+    margin-top: 100px;
+}
+.card .cursos{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 125px;
+    transform: scale(1.0);
+    transition: transform 2s; 
+
+}
+
+.card:hover{
+    transform: scale(1.2);
+    box-shadow: 9999px 9999px 9999px 99999px rgba(5, 6, 10, 0.5);
+    transition: transform 2000ms, box-shadow 1000ms;
+}
+
+.modal-overlay{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    opacity: 0;
+    visibility: hidden;
+}
+.modal{
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+
+}
+.modal .close-modal{
+    color:black;
+    position: absolute;
+    right: 8px;
+    top:8px;
+    cursor: pointer;
+}
+
+/* ==== Modal.ACTIVE ==*/
+
+
+.visible{
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top:5%;
+}
